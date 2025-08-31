@@ -1,11 +1,13 @@
-import React from "react";
+
 import { Star } from "lucide-react"; 
 
 const RestaurantCard = ({ restaurant }) => {
+
+
   return (
     <div
       className="border border-gray-200 rounded-2xl shadow-md overflow-hidden 
-                 w-[300px] m-4 transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+                 w-[300px] m-4 transition-transform duration-300 hover:scale-105 hover:shadow-lg"        
     >
       {/* Image */}
       <div className="w-full h-40">

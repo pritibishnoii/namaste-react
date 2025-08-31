@@ -179,6 +179,42 @@ const resList = [
     costForTwo: 28000,
     deliveryTime: 17,
   },
+    {
+    id: 21,
+    imageUrl: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092",
+    name: "Donut Den",
+    avgRating: 4.1,
+    cuisines: ["Desserts", "Bakery"],
+    costForTwo: 28000,
+    deliveryTime: 17,
+  },
+    {
+    id: 22,
+    imageUrl: "https://images.unsplash.com/photo-1546069901-eacef0df6022",
+    name: "Kebab Kingdom",
+    avgRating: 4.5,
+    cuisines: ["Indian", "Mughlai"],
+    costForTwo: 62000,
+    deliveryTime: 32,
+  },
+  {
+    id: 23,
+    imageUrl: "https://images.unsplash.com/photo-1556740749-887f6717d7e4",
+    name: "Wrap World",
+    avgRating: 4.2,
+    cuisines: ["Fast Food", "Wraps"],
+    costForTwo: 35000,
+    deliveryTime: 19,
+  },
+  {
+    id: 24,
+    imageUrl: "https://images.unsplash.com/photo-1617196033664-9aa31f85124d",
+    name: "Ramen Republic",
+    avgRating: 4.6,
+    cuisines: ["Japanese", "Ramen"],
+    costForTwo: 65000,
+    deliveryTime: 34,
+  },
   // … continue up to id: 50 with similar structure
 ];
 

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import RestaurantCard from "./RestaurantCard";
 import resList from "../utils/API";
 import Simmer from "./Simmer";
+import {Link} from "react-router-dom";
+
 
 const Body = () => {
   const [resData, setResData] = useState([]);
@@ -68,7 +70,11 @@ const Body = () => {
         filteredResList.length === 0 ? <Simmer /> :  <div className="flex flex-wrap justify-center gap-4">
     
     {
-              filteredResList.map((restaurant) =><RestaurantCard key={restaurant.id} restaurant={restaurant} />
+              filteredResList.map((restaurant) =>
+            <Link to={`/restaurant/${restaurant.id}`}  key={restaurant.id} >
+              <RestaurantCard restaurant={restaurant}  />
+            </Link>
+        
     )}
       </div>
     }
