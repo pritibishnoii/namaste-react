@@ -7,6 +7,7 @@ const resList = [
     cuisines: ["Biryani", "North Indian"],
     costForTwo: 40000,
     deliveryTime: 30,
+    promoted:true
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const resList = [
     cuisines: ["Italian", "Fast Food"],
     costForTwo: 50000,
     deliveryTime: 25,
+        promoted:false
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const resList = [
     cuisines: ["Japanese", "Asian"],
     costForTwo: 70000,
     deliveryTime: 40,
+        promoted:true
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ const resList = [
     cuisines: ["American", "Burgers"],
     costForTwo: 35000,
     deliveryTime: 20,
+        promoted:false
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ const resList = [
     cuisines: ["Indian", "Tandoor"],
     costForTwo: 60000,
     deliveryTime: 28,
+        promoted:false
   },
   {
     id: 6,
@@ -52,6 +57,7 @@ const resList = [
     cuisines: ["Italian", "Continental"],
     costForTwo: 45000,
     deliveryTime: 22,
+        promoted:true
   },
   {
     id: 7,
@@ -61,6 +67,7 @@ const resList = [
     cuisines: ["Indian", "Curry"],
     costForTwo: 38000,
     deliveryTime: 26,
+        promoted:false
   },
   {
     id: 8,
@@ -70,6 +77,7 @@ const resList = [
     cuisines: ["Steak", "Grill"],
     costForTwo: 90000,
     deliveryTime: 35,
+      promoted:false
   },
   {
     id: 9,
@@ -79,6 +87,7 @@ const resList = [
     cuisines: ["Mediterranean", "Lebanese"],
     costForTwo: 42000,
     deliveryTime: 27,
+      promoted:false
   },
   {
     id: 10,
@@ -88,6 +97,7 @@ const resList = [
     cuisines: ["Vegan", "Healthy"],
     costForTwo: 46000,
     deliveryTime: 24,
+      promoted:true
   },
   {
     id: 11,
@@ -97,6 +107,7 @@ const resList = [
     cuisines: ["Mexican", "Street Food"],
     costForTwo: 39000,
     deliveryTime: 23,
+      promoted:false
   },
   {
     id: 12,
@@ -106,6 +117,7 @@ const resList = [
     cuisines: ["Desserts", "Bakery"],
     costForTwo: 25000,
     deliveryTime: 18,
+      promoted:false
   },
   {
     id: 13,
@@ -115,6 +127,7 @@ const resList = [
     cuisines: ["Seafood", "Asian"],
     costForTwo: 80000,
     deliveryTime: 33,
+      promoted:true
   },
   {
     id: 14,
@@ -124,6 +137,7 @@ const resList = [
     cuisines: ["Salads", "Healthy"],
     costForTwo: 30000,
     deliveryTime: 20,
+      promoted:false
   },
   {
     id: 15,
@@ -133,6 +147,7 @@ const resList = [
     cuisines: ["Fast Food", "Chicken"],
     costForTwo: 37000,
     deliveryTime: 21,
+      promoted:false
   },
   {
     id: 16,
@@ -142,6 +157,7 @@ const resList = [
     cuisines: ["Chinese", "Dim Sum"],
     costForTwo: 52000,
     deliveryTime: 29,
+      promoted:false
   },
   {
     id: 17,
@@ -151,6 +167,7 @@ const resList = [
     cuisines: ["Indian", "Mughlai"],
     costForTwo: 62000,
     deliveryTime: 32,
+      promoted:true
   },
   {
     id: 18,
@@ -160,6 +177,7 @@ const resList = [
     cuisines: ["Fast Food", "Wraps"],
     costForTwo: 35000,
     deliveryTime: 19,
+      promoted:false
   },
   {
     id: 19,
@@ -169,6 +187,7 @@ const resList = [
     cuisines: ["Japanese", "Ramen"],
     costForTwo: 65000,
     deliveryTime: 34,
+      promoted:false
   },
   {
     id: 20,
@@ -178,6 +197,7 @@ const resList = [
     cuisines: ["Desserts", "Bakery"],
     costForTwo: 28000,
     deliveryTime: 17,
+      promoted:false
   },
     {
     id: 21,
@@ -187,6 +207,7 @@ const resList = [
     cuisines: ["Desserts", "Bakery"],
     costForTwo: 28000,
     deliveryTime: 17,
+      promoted:true
   },
     {
     id: 22,
@@ -196,6 +217,7 @@ const resList = [
     cuisines: ["Indian", "Mughlai"],
     costForTwo: 62000,
     deliveryTime: 32,
+      promoted:false
   },
   {
     id: 23,
@@ -205,6 +227,7 @@ const resList = [
     cuisines: ["Fast Food", "Wraps"],
     costForTwo: 35000,
     deliveryTime: 19,
+      promoted:false
   },
   {
     id: 24,
@@ -214,6 +237,7 @@ const resList = [
     cuisines: ["Japanese", "Ramen"],
     costForTwo: 65000,
     deliveryTime: 34,
+      promoted:false
   },
   // … continue up to id: 50 with similar structure
 ];

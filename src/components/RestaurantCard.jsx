@@ -53,4 +53,27 @@ const RestaurantCard = ({ restaurant }) => {
   );
 };
 
+
+
+
+
+
+// HOC   order component
+// input - ResataurantCard ==> RestaurantCardWithPromotedLabel
+
+export  const withPromotedLabel= (RestaurantCard)=>{
+  // return new inhenced component  
+  return (props)=>{
+    console.log(props)
+      return(
+        <div className="relative">
+          <label className="absolute top-0 left-0 bg-black  rounded px-4  py-2 text-xs text-white z-10  ">Promoted</label>
+          <RestaurantCard  {...props}/>
+        </div>
+      )
+  }
+
+}
+
+
 export default RestaurantCard;

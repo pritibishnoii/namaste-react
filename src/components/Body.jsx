@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard ,{withPromotedLabel}from "./RestaurantCard";
 import resList from "../utils/API";
 import Simmer from "./Simmer";
 import {Link} from "react-router-dom";
@@ -9,6 +9,10 @@ const Body = () => {
   const [resData, setResData] = useState([]);
   const [filteredResList, setFilteredResList] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+
+  // HOC 
+  const RestaurantCardWithPromotedLabel = withPromotedLabel(RestaurantCard);
+  // console.log(RestaurantCardWithPromotedLabel)
 
   // Search handler
   const handleSearch = () => {
@@ -72,7 +76,11 @@ const Body = () => {
     {
               filteredResList.map((restaurant) =>
             <Link to={`/restaurant/${restaurant.id}`}  key={restaurant.id} >
-              <RestaurantCard restaurant={restaurant}  />
+              {
+                restaurant.promoted?<RestaurantCardWithPromotedLabel restaurant={restaurant} />
+                :
+                <RestaurantCard restaurant={restaurant} />
+              }
             </Link>
         
     )}
